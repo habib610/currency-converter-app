@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import CurrencyScreen from "./components/CurrencyScreen";
+import { Container } from "react-bootstrap";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1 className="text-center mb-5 bg-info py-2 text-white">Currency Converter App</h1>
+      <Container className="text-white">
+        <CurrencyScreen />
+      </Container>
+    </>
   );
 }
 
